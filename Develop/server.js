@@ -15,9 +15,12 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://budget:tigerdesk1@ds119702.mlab.com:19702/heroku_nw600q3r", {
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://budget:tigerdesk1@ds119702.mlab.com:19702/heroku_nw600q3r", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useMongoClient: true
 });
 
 // routes
