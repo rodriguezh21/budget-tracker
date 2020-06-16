@@ -17,7 +17,6 @@ Budget Tracker is an app that manages your budget very easily and efficient even
 
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
 
 ***
 
@@ -32,7 +31,7 @@ Budget Tracker is an app that manages your budget very easily and efficient even
 
   * Enter expenses offline
 
-When brought back online:
+- When brought back online:
 
   * Offline entries should be added to tracker.
 
